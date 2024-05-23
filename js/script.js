@@ -43,7 +43,7 @@ $(".inputs").keyup(function () {
  
    //slide down menu
    $(".menu-item-has-children a").click(function(e) {
-    e.preventDefault();
+
          
     $(this).siblings(".sub-menu ").slideToggle(400);
 

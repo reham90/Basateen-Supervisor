@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title> Sallat Albasateen / products management</title> 
+      <link rel="icon" href="images/fav.png" type="image/png" />
+      <link rel="stylesheet" href="css/line-awesome.min.css" />
+      <link rel="stylesheet" href="css/bootstrap.css" />
+     
+      <link rel="stylesheet" href="css/fonts.css" />
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <!-- preloader -->
+      <div class="preloader">
+         <div class="progress">
+            <div class="progress-bar"></div>
+         </div>
+      </div>
+      <!-- preloader -->
+      <!-- header section -->
+      <header>
+         <div class="top-header">
+            <div class="container">
+               <div class="nav-header">
+                  <div class="logo-and-name-div">
+                  <div class="img-logo">
+                     <a href="index.html"><img src="images/logo.png" class="img-responsive" /></a>
+                  </div>
+                  <div class="supervisor-name-div">
+                     <h2 class="supervisor-name">
+                       Hi Faisal Mohammad 
+                     </h2>
+                     <p class="supervisor-notes">
+                        <span class="id-number">
+                        ID 16870
+                        </span>
+                        <span>
+                           Account creation date 06/20/2023
+                        </span>
+                     </p>
+                  </div>
+               </div>
+                  <ul class="top-header-list">
+                     <li>
+                        <a href="#">
+                        <i class="las la-store top-header-list-icon"></i>
+                        <span class="top-header-list-text ">
+                      Riyadh branch
+                        </span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="notifications.html">
+                           <div class="notification-icon">
+                              <i class="las la-bell top-header-list-icon"></i>
+                              <span class="notification-no">
+                              0
+                              </span>
+                           </div>
+                           <span class="top-header-list-text">
+                          notifications
+                           </span>
+                        </a>
+                     </li>
+                     <li class="hidden-xs hidden-sm">
+                        <button type="button" class="sign-out-btn"  data-toggle="modal" data-target="#exampleModal">
+                        <i class="las la-sign-out-alt top-header-list-icon "></i>
+                        <span class="top-header-list-text">
+                       sign out
+                        </span>
+                        </button>
+                     </li>
+                     <a href="branch-statistics.html" class="language-anchor hidden-xs hidden-sm">العربية </a>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- end top header-->
+         </div> 
+      </header>
+      <!-- header section     -->
+      <!-- dashboard -->
+      <div class="container">
+         <!-- menu-icon-for-mobile -->
+         <div class="show-icons">
+            <a class="menu-bars" id="menu-id" href="#!">
+            <i class="las la-bars bar show-icon"></i>
+            <i class="las la-times times hide-icon"></i>
+            </a>
+         </div>
+         <!-- end menu-icon-for-mobile -->
+         <div class="dashboard-section">
+            <div class="navgition">
+               <ul class="my-account-list big-menu list-unstyled">
+                  <li>
+                     <a href="branch-statistics-en.html" >
+                     <i class="las la-chart-pie"></i>
+                     branch statistics
+                     </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                     <a href="#" class="active">
+                     <i class="las la-border-all"></i>
+                    products managment
+                     </a>
+                     <ul class="sub-menu">
+                        <li>
+                           <a href="show-products-en.html" class="active">
+                          showing products
+                           </a>
+                        </li>
+                        <li>
+                           <a href="edits-en.html">
+                          edit book
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="delivery-managment-en.html">
+                     <i class="las la-truck"></i>
+                    manage delivery requests
+                     </a>
+                  </li>
+                  <li>
+                     <a href="returns-managment-en.html">
+                     <i class="las la-undo-alt"></i>
+                    manage returns requests
+                     </a>
+                  </li>
+                  <li>
+                     <a href="delegates-managment-en.html">
+                     <i class="las la-users"></i>
+                    management of delegates
+                     </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                     <a href="#">
+                     <i class="las la-envelope"></i>
+                     messages
+                     </a>
+                     <ul class="sub-menu">
+                        <li>
+                           <a href="coming-messages-en.html">
+                           incoming messages
+                           </a>
+                        </li>
+                        <li>
+                           <a href="sent-messages-en.html">
+                           sent messages
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="notifications-en.html">
+                     <i class="las la-bell"></i>
+                    notifications
+                     </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                     <a href="#">
+                     <i class="las la-user"></i>
+                    personal profile
+                     </a>
+                     <ul class="sub-menu">
+                        <li>
+                           <a href="account-details-en.html">
+                          account details
+                           </a>
+                        </li>
+                        <li>
+                           <a href="branch-details-en.html">
+                           branch details
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <button type="button"  data-toggle="modal" data-target="#exampleModal">
+                     <i class="las la-sign-out-alt"></i>
+                     sign out
+                     </button>
+                     <!-- Modal -->
+                     <div class="modal fade my-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog my-modal-dialog" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header my-modal-header">
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <i class="las la-times"></i>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <h2 class="modal-title mb-22">
+                                  sign out
+                                 </h2>
+                                 <p class="my-modal-note">
+                                    Are you sure you want to sign out ?
+                                 </p>
+                                 <button class="submit-btn sign-out-yes">
+                                yes
+                                 </button>
+                                 <button class="submit-btn sign-out-no">
+                                cancel
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <a href="show-products.html" class="language-anchor hidden-lg hidden-md">العربية</a>
+               </ul>
+            </div>
+            <div class="dashboard-content">
+               <h2 class="dashboard-main-title">
+                products
+               </h2>
+               <form class="dashboard-form">
+                  <div class="form-record">
+                     <div class="input-block">
+                        <label class="form-label">
+                       search
+                        </label>
+                        <input type="text" class="form-input-1 m-0" placeholder=" product name ">
+                     </div>
+                     <div class="input-block">
+                        <label class="form-label">
+                       product type 
+                        </label>
+                        <div class="form-input-div">
+                           <select class="form-input-1 m-0">
+                            <option> choose from list </option>
+                            <option> choose from list </option>
+                            <option> choose from list </option>
+                            </select>
+                          
+                            
+                            <i class="las la-angle-down register-form-icon"></i>
+                          </div>
+                     </div>
+                     <div class="input-block">
+                        <label class="form-label">
+                       main category
+                        </label>
+                        <div class="form-input-div">
+                           <select class="form-input-1 m-0">
+                              <option> choose from list </option>
+                              <option> choose from list </option>
+                              <option> choose from list </option>
+                            </select>
+                          
+                            
+                            <i class="las la-angle-down register-form-icon"></i>
+                          </div>
+                     </div>
+                     <div class="input-block">
+                        <label class="form-label">
+                           Subclassification
+                        </label>
+                        <div class="form-input-div">
+                           <select class="form-input-1 m-0">
+                              <option> choose from list </option>
+                              <option> choose from list </option>
+                              <option> choose from list </option>
+                            </select>
+                          
+                            
+                            <i class="las la-angle-down register-form-icon"></i>
+                          </div>
+                     </div>
+                  </div>
+                 
+                  <div class="dashboard-submit-btns-div">
+                     <button class="submit-btn-1" type="submit">
+                     recovery
+                     </button>
+                     <button class="submit-btn-1 red-bg" type="submit">
+                       search
+                        </button>
+                  </div>
+               </form>
+               <div class="dashboard-table-div mb-30">
+                  <table class="dashboard-table">
+                    <tr class="table-head">
+                      <th> # </th>
+                      <th> photo  </th>
+                      <th>  ID </th>
+                     
+                      <th>  product name </th>
+                      <th> amount </th>
+                      <th> price </th>
+                      <th> edit </th>
+                      <th> available </th>
+                    </tr>
+                    <tr class="table-record">
+                      <td> 1 </td>
+                      <td> 
+                        <div class="table-product-img">
+                           <img class="table-pro-img" src="images/01.png" alt="product img">
+                        </div> 
+                     </td>
+                      <td> 6000000092 </td>
+                      <td> Fonte tortilla bread, 6 pieces - 250 grams </td>
+                      
+                      <td> 100 </td>
+                     <td> 7.00 SAR</td>
+                     
+                     
+                      <td class="table-btn">
+                        <button>
+                           <i class="las la-eye"></i>
+                        </button>
+                      </td>
+                      <td>
+                       
+                           
+                             <div class="switch-btn" >
+                               <input type="checkbox" class="switch-checkbox" />
+                               <div class="knobs"></div>
+                               <div class="layer"></div>
+                             </div>
+                          
+                        
+                      </td>
+                    </tr>
+            
+                    <tr class="table-record">
+                     <td> 2 </td>
+                     <td> 
+                       <div class="table-product-img">
+                          <img class="table-pro-img" src="images/01.png" alt="product img">
+                       </div> 
+                    </td>
+                     <td> 6000000092 </td>
+                     <td> Fonte tortilla bread, 6 pieces - 250 grams </td>
+                     
+                     <td> 100 </td>
+                    <td> 7.00 SAR</td>
+                    
+                    
+                     <td class="table-btn">
+                       <button>
+                          <i class="las la-eye"></i>
+                       </button>
+                     </td>
+                     <td>
+                      
+                          
+                            <div class="switch-btn" >
+                              <input type="checkbox" class="switch-checkbox" />
+                              <div class="knobs"></div>
+                              <div class="layer"></div>
+                            </div>
+                         
+                       
+                     </td>
+                   </tr>
+            
+                   <tr class="table-record">
+                     <td> 3 </td>
+                     <td> 
+                       <div class="table-product-img">
+                          <img class="table-pro-img" src="images/01.png" alt="product img">
+                       </div> 
+                    </td>
+                     <td> 6000000092 </td>
+                     <td> Fonte tortilla bread, 6 pieces - 250 grams </td>
+                     
+                     <td> 100 </td>
+                    <td> 7.00 SAR</td>
+                    
+                    
+                     <td class="table-btn">
+                       <button>
+                          <i class="las la-eye"></i>
+                       </button>
+                     </td>
+                     <td>
+                      
+                          
+                            <div class="switch-btn" >
+                              <input type="checkbox" class="switch-checkbox" />
+                              <div class="knobs"></div>
+                              <div class="layer"></div>
+                            </div>
+                         
+                       
+                     </td>
+                   </tr>
+            
+                   <tr class="table-record">
+                     <td> 4 </td>
+                     <td> 
+                       <div class="table-product-img">
+                          <img class="table-pro-img" src="images/01.png" alt="product img">
+                       </div> 
+                    </td>
+                     <td> 6000000092 </td>
+                     <td> Fonte tortilla bread, 6 pieces - 250 grams </td>
+                     
+                     <td> 100 </td>
+                    <td> 7.00 SAR</td>
+                    
+                    
+                     <td class="table-btn">
+                       <button>
+                          <i class="las la-eye"></i>
+                       </button>
+                     </td>
+                     <td>
+                      
+                          
+                            <div class="switch-btn" >
+                              <input type="checkbox" class="switch-checkbox" />
+                              <div class="knobs"></div>
+                              <div class="layer"></div>
+                            </div>
+                         
+                       
+                     </td>
+                   </tr>
+                   <tr class="table-record">
+                     <td> 5 </td>
+                     <td> 
+                       <div class="table-product-img">
+                          <img class="table-pro-img" src="images/01.png" alt="product img">
+                       </div> 
+                    </td>
+                     <td> 6000000092 </td>
+                     <td> Fonte tortilla bread, 6 pieces - 250 grams </td>
+                     
+                     <td> 100 </td>
+                    <td> 7.00 SAR</td>
+                    
+                    
+                     <td class="table-btn">
+                       <button>
+                          <i class="las la-eye"></i>
+                       </button>
+                     </td>
+                     <td>
+                      
+                          
+                            <div class="switch-btn" >
+                              <input type="checkbox" class="switch-checkbox" />
+                              <div class="knobs"></div>
+                              <div class="layer"></div>
+                            </div>
+                         
+                       
+                     </td>
+                   </tr>
+                   <tr class="table-record">
+                     <td> 6 </td>
+                     <td> 
+                       <div class="table-product-img">
+                          <img class="table-pro-img" src="images/01.png" alt="product img">
+                       </div> 
+                    </td>
+                     <td> 6000000092 </td>
+                     <td> Fonte tortilla bread, 6 pieces - 250 grams </td>
+                     
+                     <td> 100 </td>
+                    <td> 7.00 SAR</td>
+                    
+                    
+                     <td class="table-btn">
+                       <button>
+                          <i class="las la-eye"></i>
+                       </button>
+                     </td>
+                     <td>
+                      
+                          
+                            <div class="switch-btn" >
+                              <input type="checkbox" class="switch-checkbox" />
+                              <div class="knobs"></div>
+                              <div class="layer"></div>
+                            </div>
+                         
+                       
+                     </td>
+                   </tr>
+                   <tr class="table-record">
+                     <td> 7 </td>
+                     <td> 
+                       <div class="table-product-img">
+                          <img class="table-pro-img" src="images/01.png" alt="product img">
+                       </div> 
+                    </td>
+                     <td> 6000000092 </td>
+                     <td> Fonte tortilla bread, 6 pieces - 250 grams </td>
+                     
+                     <td> 100 </td>
+                    <td> 7.00 SAR</td>
+                    
+                    
+                     <td class="table-btn">
+                       <button>
+                          <i class="las la-eye"></i>
+                       </button>
+                     </td>
+                     <td>
+                      
+                          
+                            <div class="switch-btn" >
+                              <input type="checkbox" class="switch-checkbox" />
+                              <div class="knobs"></div>
+                              <div class="layer"></div>
+                            </div>
+                         
+                       
+                     </td>
+                   </tr>
+                   <tr class="table-record">
+                     <td> 8 </td>
+                     <td> 
+                       <div class="table-product-img">
+                          <img class="table-pro-img" src="images/01.png" alt="product img">
+                       </div> 
+                    </td>
+                     <td> 6000000092 </td>
+                     <td> Fonte tortilla bread, 6 pieces - 250 grams </td>
+                     
+                     <td> 100 </td>
+                    <td> 7.00 SAR</td>
+                    
+                    
+                     <td class="table-btn">
+                       <button>
+                          <i class="las la-eye"></i>
+                       </button>
+                     </td>
+                     <td>
+                      
+                          
+                            <div class="switch-btn" >
+                              <input type="checkbox" class="switch-checkbox" />
+                              <div class="knobs"></div>
+                              <div class="layer"></div>
+                            </div>
+                         
+                       
+                     </td>
+                   </tr>
+                   <tr class="table-record">
+                     <td> 9 </td>
+                     <td> 
+                       <div class="table-product-img">
+                          <img class="table-pro-img" src="images/01.png" alt="product img">
+                       </div> 
+                    </td>
+                     <td> 6000000092 </td>
+                     <td> Fonte tortilla bread, 6 pieces - 250 grams </td>
+                     
+                     <td> 100 </td>
+                    <td> 7.00 SAR</td>
+                    
+                    
+                     <td class="table-btn">
+                       <button>
+                          <i class="las la-eye"></i>
+                       </button>
+                     </td>
+                     <td>
+                      
+                          
+                            <div class="switch-btn" >
+                              <input type="checkbox" class="switch-checkbox" />
+                              <div class="knobs"></div>
+                              <div class="layer"></div>
+                            </div>
+                         
+                       
+                     </td>
+                   </tr>
+                   <tr class="table-record">
+                     <td> 10 </td>
+                     <td> 
+                       <div class="table-product-img">
+                          <img class="table-pro-img" src="images/01.png" alt="product img">
+                       </div> 
+                    </td>
+                     <td> 6000000092 </td>
+                     <td> Fonte tortilla bread, 6 pieces - 250 grams </td>
+                     
+                     <td> 100 </td>
+                    <td> 7.00 SAR</td>
+                    
+                    
+                     <td class="table-btn">
+                       <button>
+                          <i class="las la-eye"></i>
+                       </button>
+                     </td>
+                     <td>
+                      
+                          
+                            <div class="switch-btn" >
+                              <input type="checkbox" class="switch-checkbox" />
+                              <div class="knobs"></div>
+                              <div class="layer"></div>
+                            </div>
+                         
+                       
+                     </td>
+                   </tr>
+                  
+                  </table>
+                 </div>
+
+                 <ul class="db-pagenation">
+                <li>
+                  <a href="#" class="active">
+                     1
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                     2
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                     3
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                     4
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                     5
+                  </a>
+                </li>
+                 </ul>
+            </div>
+         </div>
+      </div>
+      <!-- dashboard -->
+      <!-- footer section -->
+      <footer>
+         <div class="container">
+            <div class="copy-right">
+               © Sallat Albasateen 2024
+            </div>
+         </div>
+      </footer>
+      <!-- footer section -->
+      <!-- arrow to top -->
+      <a class="arrow-top">
+      <i class="las la-arrow-up"></i>
+      </a>
+      <!-- arrow to top -->
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
