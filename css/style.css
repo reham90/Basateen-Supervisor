@@ -537,7 +537,7 @@ height: 40px;
  .top-header-list{
   margin-inline-end: 15px;
  }
- .address-title-bar .dashboard-main-title{
+ .title-bar-with-btns .dashboard-main-title{
   margin: 0;
   flex-wrap: wrap;
   width: 230px;
@@ -552,12 +552,8 @@ height: 40px;
   margin-inline-start: 0 !important;
   margin-top: 15px;
 }
-.order-title-bar{
-  align-items: flex-start !important;
-}
- .w-847 {
-  width: 100% !important;
-}
+
+
 .table-head th{
   padding: 1px 2rem;
   white-space: nowrap;
@@ -639,6 +635,13 @@ height: 40px;
     position: absolute;
     top: 75px;
     margin-inline-start: 0;
+  }
+  .title-bar-with-btns{
+    flex-wrap: wrap;
+  }
+  .title-bar-btns{
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .show-icons {
     position: absolute;
@@ -1658,30 +1661,8 @@ font-size: 12px;
 .mb-30{
   margin-bottom: 30px;
 }
-.back-link{
-  margin: 0 auto 209px;
-  display: flex;
-  justify-content: center;
-  text-align: start;
-  transition: 0.5s;
-  color: #A7A7A7;
-  font-size: 12px;
-  align-items: flex-end;
-  text-decoration: none;
-}
-.back-link i{
-  color: #A7A7A7 ;
-  font-size: 14px;
-  margin-inline-end: 3px;
-  transition: 0.5s;
-}
-.back-link:hover i{
-  color: var(--main-hover);
-}
-.back-link:hover{
-  color: var(--main-hover);
-  text-decoration: none;
-}
+
+
 
 /*                 forget password            */
 
@@ -1974,18 +1955,46 @@ background-color: #fff;
 .address-content .form-input-1:focus{
   border: 1px solid var(--main-color);
 }
-.address-block{
+.modal-check-block{
   width: 100%;
-  height: 55px;
-  border-radius: 28px;
-  background-color: #ECECEC;
+ height: 55px;
   position: relative;
   display: flex;
   align-items: center;
-  padding-inline-start: 20px;
-  margin-bottom: 10px;
+  
+  margin-bottom: 13px;
+  border-bottom: 1px solid #D5D5D5;
+  padding-bottom: 20px;
 }
-.address-type-radio{
+.special-modal-span{
+  display: flex;
+  position: absolute;
+  height: 28px;
+  inset-inline-end: 0;
+}
+.special-modal-span span{
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+  padding: 7px 12px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+ height: 28px;
+}
+.div-with-specific-height{
+  height: 224px;
+  max-height: max-content;
+  overflow-y: scroll;
+  padding-inline-end: 5px;
+}
+.available{
+  background-color: var(--main-color);
+}
+.not-available{
+  background-color: #C5C5C5;
+}
+.check-label-radio{
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -2005,18 +2014,18 @@ background-color: #fff;
     border: 1px solid #E1E1E1;
     position: relative;
 }
-.address-type-radio:checked ~ .checkmark-2::before {
+.check-label-radio:checked ~ .checkmark-2::before {
   content: "";
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #E13612;
+  background-color: var(--main-color);
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.address-type{
+.check-label{
   font-size: 14px;
   color: #4B5256;
   display: flex;
@@ -2481,15 +2490,44 @@ html[dir="ltr"] .statistic-title{
 /*                               edit user page                                     */
 
 /*                           address book page                               */
-.address-title-bar{
+.title-bar-with-btns{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
   width: 100%;
 }
-.new-address-link{
-  background-color: var(--main-hover);
+.order-title-div{
+  display: flex;
+  align-items: baseline;
+}
+.back-link{
+color: #8B8B8B;
+font-size: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 36px;
+height: 36px;
+background-color: #F8F8F8;
+border-radius: 50%;
+text-decoration: none;
+transition: 0.5s;
+flex-shrink: 0;
+margin-inline-end: 20px;
+}
+.back-link:hover{
+background-color: var(--main-color);
+color: #fff;
+text-decoration: none;
+}
+.title-bar-btns{
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+.title-bar-btn{
+ 
   color: #fff;
   width: 126px;
 height: 36px;
@@ -2504,23 +2542,47 @@ font-family: "SST-ARABIC-BOLD";
 border: 0;
 outline: none;
 }
-.new-address-link:hover{
+.title-bar-btn:hover{
   background-color: var(--main-color);
   color: #fff;
   text-decoration: none;
 }
-.new-address-link:focus{
+.title-bar-btn:focus{
   outline: none;
   border: 0;
   color: #fff;
 }
-.address-title-bar .dashboard-main-title{
+.title-bar-with-btns .dashboard-main-title{
   margin-bottom: 0;
   display: flex;
   align-items: center;
 }
-.w-847{
-  width: 847px;
+.delegate-btn{
+  background-color: var(--main-hover);
+}
+.delegate-btn:hover{
+  background-color: var(--main-color);
+}
+.delegate-btn:focus{
+  background-color: var(--main-color);
+}
+.status-btn{
+  background-color: var(--main-color);
+}
+.status-btn:hover{
+  background-color: var(--main-hover);
+}
+.status-btn:focus{
+  background-color: var(--main-hover);
+}
+.border-0{
+  border-bottom: 0;
+}
+.h-auto{
+  height: auto;
+}
+.padding-0{
+  padding: 0;
 }
 .dashboard-table{
   width: 100%;
@@ -2730,10 +2792,33 @@ position: relative;
 .my-modal-btns{
   display: flex;
   align-items: center;
+  gap:5px;
 }
-.my-modal-btns .new-address-link{
+.my-modal-btns button{
+  border: 0;
+  outline: none; 
+  color: #fff;
+  font-size: 16px;
+  height: 48px !important;
+  transition: 0.5s;
+}
+.my-modal-btns .btn-1{
+  background-color: var(--main-color);
+
+}
+.my-modal-btns .btn-1:hover{
+  background-color: var(--main-hover);
+}
+.my-modal-btns .btn-2{
+  background-color: var(--main-hover);
+}
+.my-modal-btns .btn-2:hover{
+  background-color: var(--main-color);
+}
+.my-modal-btns .title-bar-btn{
   margin-inline-end: 5px;
 }
+
 .cash-back-link{
   margin-inline-end: 0 !important;
   background-color: var(--main-color);
@@ -2865,9 +2950,7 @@ margin-inline-end: 16px;
 .my-modal .modal-body{
   padding: 0 30px;
 }
-.my-modal .address-block{
-  height: 48px;
-}
+
 .my-modal .submit-btn{
   height: 55px;
   margin-bottom: 37px;
@@ -3035,11 +3118,11 @@ html[dir="ltr"] .wait-order{
 .order-table .table-head{
   height: auto;
   border-bottom: 1px solid #D5D5D5;
-
+background-color: transparent;
 }
 .order-table .table-head th{
   padding-bottom: 23px;
-  
+  color: #000;
 }
 .order-table .table-record{
   background-color: #F8F8F8 ;
@@ -3051,7 +3134,7 @@ html[dir="ltr"] .wait-order{
   justify-content: flex-end;
 }
 .mt-54{
-  margin-top: 54px;
+  margin-top: 54px !important;
 }
 
 .f-medium{
@@ -3132,12 +3215,12 @@ html[dir="ltr"] .wait-order{
   outline: none;
   border: 0;
 }
-.problem-modal .address-block{
+.problem-modal .modal-check-block{
   height: auto;
   background-color: transparent;
   padding-inline-start: 0;
 }
-.problem-modal .address-type-radio:checked ~ .checkmark-2::before{
+.problem-modal .check-label-radio:checked ~ .checkmark-2::before{
   background-color: var(--main-color);
 }
 .problem-modal .submit-btn{
@@ -3148,7 +3231,7 @@ html[dir="ltr"] .wait-order{
   margin-bottom: 0;
   margin-inline-end: 6px;
 }
-.address-block label{
+.modal-check-block label{
   margin: 0;
 }
 .problem-reason{
@@ -3537,7 +3620,7 @@ margin-inline-end: 15px;
     margin-top: 20px;
     justify-content: center;
   }
-  .recieved-order-title-bar{
+  .recieved-{
     flex-wrap: wrap;
   }
   .rating-order-div{
@@ -3812,7 +3895,7 @@ font-family: "SST-ARABIC-BOLD";
   gap: 15px;
   justify-content: center;
 }
-.my-modal-btns .new-address-link{
+.my-modal-btns .title-bar-btn{
   width: 100%;
   margin-top: 10px;
 }
@@ -4056,7 +4139,7 @@ font-family: "SST-ARABIC-BOLD";
 .my-modal-btns{
   width: auto;
 }
-.my-modal-btns .new-address-link {
+.my-modal-btns .title-bar-btn {
   width: 126px;
   margin-top: 0;
 }
