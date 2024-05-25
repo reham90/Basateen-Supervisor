@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>سلة البساتين /    إدارة طلبات التوصيل   </title>
+      <link rel="icon" href="images/fav.png" type="image/png" />
+      <link rel="stylesheet" href="css/line-awesome.min.css" />
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+      <link rel="stylesheet" href="css/fonts.css" />
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <!-- preloader -->
+      <div class="preloader">
+         <div class="progress">
+            <div class="progress-bar"></div>
+         </div>
+      </div>
+      <!-- preloader -->
+      <!-- header section -->
+      <header>
+         <div class="top-header">
+            <div class="container">
+               <div class="nav-header">
+                  <div class="logo-and-name-div">
+                     <div class="img-logo">
+                        <a href="index.html"><img src="images/logo.png" class="img-responsive" /></a>
+                     </div>
+                     <div class="supervisor-name-div">
+                        <h2 class="supervisor-name">
+                           هلا فيصل محمد
+                        </h2>
+                        <p class="supervisor-notes">
+                           <span class="id-number">
+                           الرقم التعريفي 16870
+                           </span>
+                           <span>
+                           تاريخ إنشاء الحساب 20/06/2023
+                           </span>
+                        </p>
+                     </div>
+                  </div>
+                  <ul class="top-header-list">
+                     <li>
+                        <a href="#">
+                        <i class="las la-store top-header-list-icon"></i>
+                        <span class="top-header-list-text ">
+                        فرع الرياض
+                        </span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="notifications.html">
+                           <div class="notification-icon">
+                              <i class="las la-bell top-header-list-icon"></i>
+                              <span class="notification-no">
+                              0
+                              </span>
+                           </div>
+                           <span class="top-header-list-text">
+                           الإشعارات
+                           </span>
+                        </a>
+                     </li>
+                     <li class="hidden-xs hidden-sm">
+                        <button type="button" class="sign-out-btn"  data-toggle="modal" data-target="#exampleModal">
+                        <i class="las la-sign-out-alt top-header-list-icon "></i>
+                        <span class="top-header-list-text">
+                        تسجيل خروج
+                        </span>
+                        </button>
+                     </li>
+                     <a href="delivery-managment-en.html" class="language-anchor hidden-xs hidden-sm">English</a>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- end top header-->
+         </div> 
+      </header>
+      <!-- header section     -->
+      <!-- dashboard -->
+      <div class="container">
+         <!-- menu-icon-for-mobile -->
+         <div class="show-icons">
+            <a class="menu-bars" id="menu-id" href="#!">
+            <i class="las la-bars bar show-icon"></i>
+            <i class="las la-times times hide-icon"></i>
+            </a>
+         </div>
+         <!-- end menu-icon-for-mobile -->
+         <div class="dashboard-section">
+            <div class="navgition">
+               <ul class="my-account-list big-menu list-unstyled">
+                  <li>
+                     <a href="branch-statistics.html" >
+                     <i class="las la-chart-pie"></i>
+                     إحصائيات الفرع
+                     </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                     <a href="#">
+                     <i class="las la-border-all"></i>
+                     إدارة المنتجات
+                     </a>
+                     <ul class="sub-menu">
+                        <li>
+                           <a href="show-products.html">
+                           عرض المنتجات
+                           </a>
+                        </li>
+                        <li>
+                           <a href="edits.html">
+                           سجل التعديلات
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="delivery-managment.html" class="active">
+                     <i class="las la-truck"></i>
+                     إدارة طلبات التوصيل
+                     </a>
+                  </li>
+                  <li>
+                     <a href="returns-managment.html">
+                     <i class="las la-undo-alt"></i>
+                     إدارة طلبات المرتجعات
+                     </a>
+                  </li>
+                  <li>
+                     <a href="delegates-managment.html">
+                     <i class="las la-users"></i>
+                     إدارة المناديب
+                     </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                     <a href="#">
+                     <i class="las la-envelope"></i>
+                     الرسائل
+                     </a>
+                     <ul class="sub-menu">
+                        <li>
+                           <a href="coming-messages.html">
+                           الرسائل الواردة
+                           </a>
+                        </li>
+                        <li>
+                           <a href="sent-messages.html">
+                           الرسائل المرسلة
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="notifications.html">
+                     <i class="las la-bell"></i>
+                     الإشعارات
+                     </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                     <a href="#">
+                     <i class="las la-user"></i>
+                     الملف الشخصي
+                     </a>
+                     <ul class="sub-menu">
+                        <li>
+                           <a href="account-details.html">
+                           بيانات الحساب
+                           </a>
+                        </li>
+                        <li>
+                           <a href="branch-details.html">
+                           بيانات الفرع
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <button type="button"  data-toggle="modal" data-target="#exampleModal">
+                     <i class="las la-sign-out-alt"></i>
+                     تسجيل خروج
+                     </button>
+                     <!-- Modal -->
+                     <div class="modal fade my-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog my-modal-dialog" role="document">
+                           <div class="modal-content">
+                              <div class="modal-header my-modal-header">
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <i class="las la-times"></i>
+                                 </button>
+                              </div>
+                              <div class="modal-body">
+                                 <h2 class="modal-title mb-22">
+                                    تسجيل خروج
+                                 </h2>
+                                 <p class="my-modal-note">
+                                    هل أنت متأكد أنك تريد تسجيل خروج ؟
+                                 </p>
+                                 <button class="submit-btn sign-out-yes">
+                                 نعم 
+                                 </button>
+                                 <button class="submit-btn sign-out-no">
+                                 إلغاء
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <a href="delivery-managment-en.html" class="language-anchor hidden-lg hidden-md">English</a>
+               </ul>
+            </div>
+            <div class="dashboard-content">
+               <h2 class="dashboard-main-title">
+                 إدارة طلبات التوصيل
+               </h2>
+               <form class="dashboard-form">
+                  <div class="form-record">
+                     <div class="input-block">
+                        <label class="form-label">
+                        البحث
+                        </label>
+                        <input type="text" class="form-input-1 m-0" placeholder=" رقم الطلب  ">
+                     </div>
+                     <div class="input-block">
+                        <label class="form-label">
+                        الحالة
+                        </label>
+                        <div class="form-input-div">
+                           <select class="form-input-1 m-0">
+                              <option> اختر من القائمة </option>
+                              <option> اختر من القائمة </option>
+                              <option> اختر من القائمة </option>
+                           </select>
+                           <i class="las la-angle-down register-form-icon"></i>
+                        </div>
+                     </div>
+                     <div class="input-block">
+                        <label class="form-label">
+                       من تاريخ
+                        </label>
+                        <input type="date" class="form-input-1 m-0 date-input"  value="..../../..">
+                     </div>
+                     <div class="input-block">
+                        <label class="form-label">
+                      إلى تاريخ
+                        </label>
+                        <input type="date" class="form-input-1 m-0 date-input"  value="..../../..">
+                     </div>
+                  </div>
+                  <div class="dashboard-submit-btns-div">
+                     <button class="submit-btn-1" type="submit">
+                     استعادة
+                     </button>
+                     <button class="submit-btn-1 red-bg" type="submit">
+                     بحث
+                     </button>
+                  </div>
+               </form>
+               <div class="dashboard-table-div mb-30">
+                  <table class="dashboard-table">
+                     <tr class="table-head">
+                        <th> # </th>
+                        <th> رقم الطلب  </th>
+                        <th> تاريخ الطلب  </th>
+                        <th>  حالة الطلب  </th>
+                        <th> اسم العميل </th>
+                        <th> نوع التوصيل </th>
+                        <th> عرض </th>
+                        <th> الفاتورة </th>
+                     </tr>
+                     <tr class="table-record">
+                        <td> 1 </td>
+                        
+                        <td> 6000000092 </td>
+                        <td> 2023/06/20 - 10:30</td>
+                        <td> 
+                           <span class="wait-order">
+                              قيد الإنتظار
+                            </span>
+                        </td>
+                        <td> عبدالله صالح </td>
+                        <td> فوري </td>
+                        <td class="table-btn">
+                           <a href="waiting.html">
+                           <i class="las la-eye"></i>
+                           </a>
+                        </td>
+                        <td class="table-btn">
+                           <button>
+                              <i class="las la-file-invoice-dollar"></i>
+                           </button>
+                        </td>
+                        
+                     </tr>
+                     <tr class="table-record">
+                        <td> 2 </td>
+                        <td> 6000000092 </td>
+                        <td> 2023/06/20 - 10:30</td>
+                        <td> 
+                           <span class="wait-order">
+                              قيد الإنتظار
+                            </span>
+                        </td>
+                        <td> عبدالله صالح </td>
+                        <td> فوري </td>
+                        <td class="table-btn">
+                           <a href="waiting.html">
+                           <i class="las la-eye"></i>
+                           </a>
+                        </td>
+                        <td class="table-btn">
+                           <button>
+                              <i class="las la-file-invoice-dollar"></i>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="table-record">
+                        <td> 3 </td>
+                        <td> 6000000092 </td>
+                        <td> 2023/06/20 - 10:30</td>
+                        <td> 
+                           <span class="wait-order">
+                              قيد الإنتظار
+                            </span>
+                        </td>
+                        <td> عبدالله صالح </td>
+                        <td> فوري </td>
+                        <td class="table-btn">
+                           <a href="waiting.html">
+                           <i class="las la-eye"></i>
+                           </a>
+                        </td>
+                        <td class="table-btn">
+                           <button>
+                              <i class="las la-file-invoice-dollar"></i>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="table-record">
+                        <td> 4 </td>
+                        <td> 6000000092 </td>
+                        <td> 2023/06/20 - 10:30</td>
+                        <td> 
+                           <span class="wait-order">
+                              قيد الإنتظار
+                            </span>
+                        </td>
+                        <td> عبدالله صالح </td>
+                        <td> فوري </td>
+                        <td class="table-btn">
+                           <a href="waiting.html">
+                           <i class="las la-eye"></i>
+                           </a>
+                        </td>
+                        <td class="table-btn">
+                           <button>
+                              <i class="las la-file-invoice-dollar"></i>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="table-record">
+                        <td> 5 </td>
+                        <td> 6000000092 </td>
+                        <td> 2023/06/20 - 10:30</td>
+                        <td> 
+                           <span class="wait-order">
+                              قيد الإنتظار
+                            </span>
+                        </td>
+                        <td> عبدالله صالح </td>
+                        <td> فوري </td>
+                        <td class="table-btn">
+                           <a href="waiting.html">
+                           <i class="las la-eye"></i>
+                           </a>
+                        </td>
+                        <td class="table-btn">
+                           <button>
+                              <i class="las la-file-invoice-dollar"></i>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="table-record">
+                        <td> 6 </td>
+                        <td> 6000000092 </td>
+                        <td> 2023/06/20 - 10:30</td>
+                        <td> 
+                           <span class="wait-order">
+                              قيد الإنتظار
+                            </span>
+                        </td>
+                        <td> عبدالله صالح </td>
+                        <td> فوري </td>
+                        <td class="table-btn">
+                           <a href="waiting.html">
+                           <i class="las la-eye"></i>
+                           </a>
+                        </td>
+                        <td class="table-btn">
+                           <button>
+                              <i class="las la-file-invoice-dollar"></i>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="table-record">
+                        <td> 7 </td>
+                        <td> 6000000092 </td>
+                        <td> 2023/06/20 - 10:30</td>
+                        <td> 
+                           <span class="wait-order">
+                              قيد الإنتظار
+                            </span>
+                        </td>
+                        <td> عبدالله صالح </td>
+                        <td> فوري </td>
+                        <td class="table-btn">
+                           <a href="waiting.html">
+                           <i class="las la-eye"></i>
+                           </a>
+                        </td>
+                        <td class="table-btn">
+                           <button>
+                              <i class="las la-file-invoice-dollar"></i>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="table-record">
+                        <td> 8 </td>
+                        <td> 6000000092 </td>
+                        <td> 2023/06/20 - 10:30</td>
+                        <td> 
+                           <span class="wait-order">
+                              قيد الإنتظار
+                            </span>
+                        </td>
+                        <td> عبدالله صالح </td>
+                        <td> فوري </td>
+                        <td class="table-btn">
+                           <a href="waiting.html">
+                           <i class="las la-eye"></i>
+                           </a>
+                        </td>
+                        <td class="table-btn">
+                           <button>
+                              <i class="las la-file-invoice-dollar"></i>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="table-record">
+                        <td> 9 </td>
+                        <td> 6000000092 </td>
+                        <td> 2023/06/20 - 10:30</td>
+                        <td> 
+                           <span class="wait-order">
+                              قيد الإنتظار
+                            </span>
+                        </td>
+                        <td> عبدالله صالح </td>
+                        <td> فوري </td>
+                        <td class="table-btn">
+                           <a href="waiting.html">
+                           <i class="las la-eye"></i>
+                           </a>
+                        </td>
+                        <td class="table-btn">
+                           <button>
+                              <i class="las la-file-invoice-dollar"></i>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr class="table-record">
+                        <td> 10 </td>
+                        <td> 6000000092 </td>
+                        <td> 2023/06/20 - 10:30</td>
+                        <td> 
+                           <span class="wait-order">
+                              قيد الإنتظار
+                            </span>
+                        </td>
+                        <td> عبدالله صالح </td>
+                        <td> فوري </td>
+                        <td class="table-btn">
+                           <a href="waiting.html">
+                           <i class="las la-eye"></i>
+                           </a>
+                        </td>
+                        <td class="table-btn">
+                           <button>
+                              <i class="las la-file-invoice-dollar"></i>
+                           </button>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+               <ul class="db-pagenation">
+                  <li>
+                     <a href="#" class="active">
+                     1
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     2
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     3
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     4
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                     5
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- dashboard -->
+      <!-- footer section -->
+      <footer>
+         <div class="container">
+            <div class="copy-right">
+               © سلة البساتين 2024
+            </div>
+         </div>
+      </footer>
+      <!-- footer section -->
+      <!-- arrow to top -->
+      <a class="arrow-top">
+      <i class="las la-arrow-up"></i>
+      </a>
+      <!-- arrow to top -->
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
