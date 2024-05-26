@@ -541,6 +541,17 @@ height: 40px;
   margin: 0;
   flex-wrap: wrap;
   width: 230px;
+  margin-bottom: 10px !important;
+
+ }
+ .accept-modal .my-modal-dialog{
+  width: auto !important;
+ }
+ .accept-modal .special-modal-span{
+  position: relative;
+ }
+ .accept-modal .modal-check-block{
+  gap:5px;
  }
  .w-360 {
   width: 100%;
@@ -998,24 +1009,25 @@ z-index: 9;
   height: 30px;
 }
 .plus{
-  font-size: 15px;
-  color: #4B5256;
-  display: flex;
+  font-size: 15px !important;
+  color: #4B5256 !important;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   background-color: #E3E3E3;
   width: 23px;
-  height: 22px;
-  border-radius: 50%;
+  height: 22px !important;
+  border-radius: 50% !important;
   cursor: pointer;
   transition: 0.5s;
+  padding: 0 !important;
   margin-inline-start: 8px;
   
 }
 .plus:hover{
-  background-color: var(--main-hover);
-  color: #fff;
+  background-color: var(--main-hover) !important;
+  color: #fff !important;
 }
 .cart-input{
   background-color: transparent;
@@ -1027,23 +1039,24 @@ z-index: 9;
   text-align: center;
 }
 .minus{
-  font-size: 15px;
-  color: #4B5256;
-  display: flex;
+  font-size: 15px !important;
+  color: #4B5256 !important;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   background-color: #E3E3E3;
   width: 23px;
-  height: 22px;
-  border-radius: 50%;
+  height: 22px !important;
+  border-radius: 50% !important;
   cursor: pointer;
   margin-inline-end: 8px;
   transition: 0.5s;
+  padding: 0 !important;
 }
 .minus:hover{
-  background-color: var(--main-hover);
-  color: #fff;
+  background-color: var(--main-hover) !important;
+  color: #fff !important;
 }
 .cart-counter-section{
   display: flex;
@@ -2789,6 +2802,9 @@ position: relative;
 /*                             notifications page                       */
 
 /*                                   wallet page                           */
+.accept-modal .my-modal-dialog{
+ width: 600px;
+}
 .my-modal-btns{
   display: flex;
   align-items: center;
@@ -2808,12 +2824,14 @@ position: relative;
 }
 .my-modal-btns .btn-1:hover{
   background-color: var(--main-hover);
+  color: #fff;
 }
 .my-modal-btns .btn-2{
   background-color: var(--main-hover);
 }
 .my-modal-btns .btn-2:hover{
   background-color: var(--main-color);
+  color: #fff;
 }
 .my-modal-btns .title-bar-btn{
   margin-inline-end: 5px;
@@ -2946,6 +2964,9 @@ margin-inline-end: 16px;
   font-size: 16px;
   font-family: "SST-ARABIC-BOLD";
   margin: 0 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .my-modal .modal-body{
   padding: 0 30px;
@@ -2964,7 +2985,7 @@ html[dir="ltr"] .my-modal .submit-btn{
   font-size: 16px;
 }
 .textarea{
-  height: 80px;
+  height: 100px;
   border-radius: 24px;
   padding: 20px;
 }
@@ -3115,6 +3136,9 @@ html[dir="ltr"] .wait-order{
   background-color: #F8F8F8;
   padding: 30px;
 }
+.order-table .table-record td{
+  max-width: 100%;
+  }
 .order-table .table-head{
   height: auto;
   border-bottom: 1px solid #D5D5D5;
@@ -3123,6 +3147,12 @@ background-color: transparent;
 .order-table .table-head th{
   padding-bottom: 23px;
   color: #000;
+}
+.w-44{
+  width: 44px;
+}
+.w-419{
+  width: 419px !important;
 }
 .order-table .table-record{
   background-color: #F8F8F8 ;
@@ -3303,6 +3333,13 @@ align-items: center;
 justify-content: center;
 flex-shrink: 0;
 background-color: #E9E9E9;
+}
+.delegate-name{
+  color: var(--main-hover);
+  display: flex !important;
+  font-size: 16px;
+  font-family: "SST-ARABIC-BOLD";
+  margin-inline-start: 3px;
 }
 .return-label{
   color: #000;
@@ -3546,6 +3583,9 @@ margin-inline-end: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .w-419{
+    width: 100% !important;
   }
   .table-record td{
     max-width: 100%;
