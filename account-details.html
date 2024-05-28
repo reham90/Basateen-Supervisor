@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>سلة البساتين /    إدارة  المناديب     </title>
+      <title>سلة البساتين /    الملف الشخصي        </title>
       <link rel="icon" href="images/fav.png" type="image/png" />
       <link rel="stylesheet" href="css/line-awesome.min.css" />
       <link rel="stylesheet" href="css/bootstrap.css" />
@@ -73,7 +73,7 @@
                         </span>
                         </button>
                      </li>
-                     <a href="delegate-en.html" class="language-anchor hidden-xs hidden-sm">English</a>
+                     <a href="account-details-en.html" class="language-anchor hidden-xs hidden-sm">English</a>
                   </ul>
                </div>
             </div>
@@ -132,7 +132,7 @@
                      </a>
                   </li>
                   <li>
-                     <a href="delegates-managment.html" class="active">
+                     <a href="delegates-managment.html" >
                      <i class="las la-users"></i>
                      إدارة المناديب
                      </a>
@@ -162,13 +162,13 @@
                      </a>
                   </li>
                   <li class="menu-item-has-children">
-                     <a href="#">
+                     <a href="#" class="active">
                      <i class="las la-user"></i>
                      الملف الشخصي
                      </a>
                      <ul class="sub-menu">
                         <li>
-                           <a href="account-details.html">
+                           <a href="account-details.html" class="active">
                            بيانات الحساب
                            </a>
                         </li>
@@ -211,98 +211,76 @@
                         </div>
                      </div>
                   </li>
-                  <a href="delegate-en.html" class="language-anchor hidden-lg hidden-md">English</a>
+                  <a href="account-details-en.html" class="language-anchor hidden-lg hidden-md">English</a>
                </ul>
             </div>
             <div class="dashboard-content">
-               <div class="title-bar-with-btns ">
-                  <div class="order-title-div">
-                     <a href="delegates-managment.html" class="back-link">
-                        <i class="las la-arrow-right"></i>
-                     </a>
-                     <div class="order-title">
+               
                     <h2 class="dashboard-main-title">
-                     تفاصيل المندوب
+                     بيانات الحساب
                      
                      </h2>
                    
-                  </div>
-               </div>
-               <div class="title-bar-btns">
-                 
-
-<a href="delivery-orders.html" class="title-bar-btn status-btn">
-    طلبات التوصيل
-</a>
-                 
-                  <a href="returns-orders.html" class="title-bar-btn print-bill-link">
-                     طلبات المرتجعات
-                     </a>
-               </div>
-                  
-                </div>
              
-               <h2 class="dashboard-main-title mt-54 ">
-                  معلومات الحساب 
-               </h2>
+              
                <div class="total-cart p-0  total-order-info-2">
                   <div class="total-record">
                      <span class="total-label fs-16 f-medium w-292">
-                    الرقم التعريفي
+                   اسم المستخدم
                      </span>
                      <span class="total-answer fs-16 f-roman">
-                    600000005
+                  فيصل محمد
                      </span>
                   </div>
                   <div class="total-record">
                      <span class="total-label fs-16 f-medium w-292">
-                    تاريخ الإضافة
+                    الصلاحية
                      </span>
                      <span class="total-answer fs-16 f-roman">
-                     10/11/2023
+                    مدير فرع
                      </span>
                   </div>
                   <div class="total-record">
                      <span class="total-label fs-16 f-medium w-292">
-                    اسم المندوب
+                   البريد الإلكتروني
                      </span>
                      <span class="total-answer fs-16 f-roman">
-                    خالد سالم
+                   faisal.mohammad@gmail.com
                      </span>
-                  </div>
-                  <div class="total-record">
-                     <span class="total-label fs-16 f-medium w-292">
-                    حالة المندوب
-                     </span>
-                    
-                    <span class="wait-order recieved-order">
-                     فعال
-                     </span>
-                  </div>
-                  <div class="total-record">
-                     <span class="total-label fs-16 f-medium w-292">
-                    حالة الإتاحة
-                     </span>
-                     <div class="switch-btn" >
-                        <input type="checkbox" class="switch-checkbox" checked />
-                        <div class="knobs"></div>
-                        <div class="layer"></div>
-                     </div>
                   </div>
                   <div class="total-record">
                      <span class="total-label fs-16 f-medium w-292">
                    رقم الجوال
                      </span>
+                    
                      <span class="total-answer fs-16 f-roman">
-                   05400000
-                     </span>
+                        054000000
+                          </span>
                   </div>
+                 
+                 
                </div>
                <h2 class="dashboard-main-title mt-54 ">
                 تغيير كلمة المرور
                </h2>
-            <form class="form-2">
+            <form class="form-3">
                <div class="form-record">
+
+                  <div class="input-block w-262">
+                     <label class="register-form-label">
+                        كلمة المرور الحالية
+                          </label>
+                          <div class="form-input-div">
+                           <input type="password" class="form-input-1 mb-20 p-20" id="pass4" placeholder="">
+                          
+                           <a onclick="togglePassword4()">
+                             <i class="las la-eye-slash  register-form-icon" id="eye-slash4" ></i>
+                             <i class=" las la-eye register-form-icon" id="eye4" ></i>
+                            
+                             </a>
+                         </div>
+                   </div>  
+
                 <div class="input-block w-262">
                   <label class="register-form-label">
                      كلمة المرور الجديدة
@@ -383,6 +361,23 @@
              var x = document.getElementById("pass-2");
              var eyeSlash = document.getElementById("eye-slash-2");
              var eye = document.getElementById("eye-2");
+             if (x.type === "password") {
+               x.type = "text";
+               eyeSlash.style.display="none";
+               eye.style.display="block";
+         
+             } else {
+               x.type = "password";
+               eyeSlash.style.display="block";
+               eye.style.display="none";
+             }
+           }
+
+           function togglePassword4() {
+             
+             var x = document.getElementById("pass4");
+             var eyeSlash = document.getElementById("eye-slash4");
+             var eye = document.getElementById("eye4");
              if (x.type === "password") {
                x.type = "text";
                eyeSlash.style.display="none";
