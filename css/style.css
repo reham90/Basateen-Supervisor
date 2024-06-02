@@ -916,13 +916,13 @@ header {
 	outline: none;
 }
 
-.red-bg:hover {
+/* .statistics-total:hover {
 	background-color: var(--main-color);
 }
 
-.red-bg:focus {
+.statistics-total:focus {
 	background-color: var(--main-color);
-}
+} */
 
 .dashboard-content {
 	width: 100%;
@@ -1703,7 +1703,7 @@ html[dir="ltr"] .my-account-list li a {
 }
 
 .my-account-list li a.active {
-	color: var(--main-hover);
+	color: var(--main-hover) !important;
 }
 
 .my-account-list li a.active i {
@@ -1742,6 +1742,7 @@ html[dir="ltr"] .my-account-list li a {
 	align-items: center;
 	justify-content: center;
 	border: 1px solid #E7E7E7;
+	overflow: hidden;
 }
 
 .branch-block-icon {
@@ -1778,6 +1779,7 @@ html[dir="ltr"] .my-account-list li a {
 	font-size: 14px;
 	line-height: 1.6;
 	height: 45px;
+	overflow: hidden;
 }
 
 html[dir="ltr"] .statistic-title {
@@ -1789,7 +1791,7 @@ html[dir="ltr"] .statistic-title {
 	background-color: #66A61B !important;
 }
 
-.red-bg {
+.statistics-total {
 	background-color: var(--main-hover);
 }
 
@@ -2464,11 +2466,11 @@ html[dir="ltr"] .my-modal .submit-btn {
 }
 
 .table-record td {
-	padding: 0 10px;
+	padding:  10px;
 }
 
 .table-head th {
-	padding: 0 10px;
+	padding:  10px;
 }
 
 .my-modal-note {
@@ -2885,6 +2887,12 @@ html[dir="ltr"] .wait-order {
 .mt-0 {
 	margin-top: 0;
 }
+.date-input{
+	padding: 0 !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /*                            contact us page                                           */
 
@@ -2903,7 +2911,7 @@ html[dir="ltr"] .wait-order {
 	}
 
 	.w-292 {
-		width: 215px;
+		width: 100%;
 	}
 
 	.w-419 {
@@ -2949,7 +2957,7 @@ html[dir="ltr"] .wait-order {
 	}
 
 	.total-order-info-2 .total-record {
-		gap: 15px;
+	flex-wrap: wrap;
 	}
 
 

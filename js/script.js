@@ -43,13 +43,15 @@ $(document).ready(function() {
         $(this).siblings(".sub-menu ").slideToggle(400);
 
 
-
         $(this).toggleClass("active");
         $(".menu-item-has-children a").not(this).removeClass("active");
 
     });
+  
 
-
+    // if ($(".menu-item-has-children a").hasClass('active') ) {
+    //     $(".sub-menu").css('display' , 'block');
+    // };
     //fixed nav
     // $stickyNav = $(".top-header");
     // $(window).on("scroll load", function () {
