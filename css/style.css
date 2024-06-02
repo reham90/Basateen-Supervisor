@@ -10,7 +10,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-
+    padding-top: 101px;
 	height: max-content;
 	max-height: max-content;
 }
@@ -316,7 +316,7 @@ html[dir="ltr"] .progress-bar {
 /*                          dropdown                            */
 /*top header*/
 header {
-	position: relative;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -580,8 +580,11 @@ header {
 		margin: 0;
 		flex-wrap: wrap;
 		width: 230px;
-		margin-bottom: 10px !important;
+		
 
+	}
+	.title-bar-with-btns .order-date{
+		margin: 8px 0 5px !important;
 	}
 
 	.accept-modal .my-modal-dialog {
@@ -606,7 +609,7 @@ header {
 
 	.dashboard-main-title .wait-order {
 		margin-inline-start: 0 !important;
-		margin-top: 15px;
+		margin-top: 8px;
 	}
 
 
@@ -682,6 +685,7 @@ header {
 	body {
 
 		position: relative;
+		padding-top: 145px;
 	}
 
 	.supervisor-name-div {
@@ -693,15 +697,17 @@ header {
 
 	.title-bar-with-btns {
 		flex-wrap: wrap;
+		gap:8px;
 	}
 
 	.title-bar-btns {
 		flex-wrap: wrap;
-		justify-content: center;
+		
+		gap:8px !important;
 	}
 
 	.show-icons {
-		position: absolute;
+		position: fixed;
 		font-size: 18px;
 		background-color: transparent;
 		border: none;
@@ -3225,9 +3231,20 @@ html[dir="ltr"] .wait-order {
 	.top-header-list li:not(:last-child) {
 		margin-inline-end: 15px !important;
 	}
-
+	.branches-statistics-grid{
+		grid-template-columns: repeat(4,1fr);
+	}
 	.top-header-list-text {
 		display: none;
+	}
+	.title-bar-with-btns{
+		flex-wrap: wrap;
+	}
+	.title-bar-with-btns .order-date{
+		margin: 8px 0 5px;
+	}
+	.title-bar-with-btns .dashboard-main-title{
+		margin-top: 0;
 	}
 
 	.dashboard-form .input-block {
