@@ -49,9 +49,13 @@ $(document).ready(function() {
     });
   
 
-    // if ($(".menu-item-has-children a").hasClass('active') ) {
-    //     $(".sub-menu").css('display' , 'block');
-    // };
+    if ($(".menu-item-has-children a").hasClass('active') ) {
+        $(".sub-menu").slideDown();
+        
+    };
+    if (!$(".menu-item-has-children a").hasClass('active') ) {
+        $(this).siblings(".sub-menu ").slideUp();
+    }
     //fixed nav
     // $stickyNav = $(".top-header");
     // $(window).on("scroll load", function () {
