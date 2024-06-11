@@ -56,6 +56,7 @@ $(document).ready(function() {
     if (!$(".menu-item-has-children a").hasClass('active') ) {
         $(this).siblings(".sub-menu ").slideUp();
     }
+    
     //fixed nav
     // $stickyNav = $(".top-header");
     // $(window).on("scroll load", function () {
@@ -106,8 +107,6 @@ $(document).ready(function() {
             $(".arrow-top").fadeIn(300) :
             $(".arrow-top").fadeOut(300);
     });
-
-
 
 
     //////////////////////////////// add to cart counter  /////////////////////////////////////////

@@ -575,7 +575,14 @@ header {
 	.top-header-list {
 		margin-inline-end: 15px;
 	}
-
+.body-bg{
+	display: flex !important;
+    flex-wrap: wrap !important;
+    padding: 50px 0 !important;
+}
+.body-bg .copy-right{
+	margin-bottom: 30px;
+}
 	.title-bar-with-btns .dashboard-main-title {
 		margin: 0;
 		flex-wrap: wrap;
@@ -1025,7 +1032,9 @@ header {
 /*                                   footer                            */
 footer {
 	padding: 21px 0 22px;
-
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 	background-color: #F9F9F9;
 }
 
@@ -1066,7 +1075,39 @@ footer {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
-
+.submit-btn {
+    width: 315px;
+    height: 48px;
+    border: 0;
+    border-radius: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    outline: none;
+    padding: 0;
+    transition: 0.5s;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: var(--main-hover);
+    margin: 0;
+    font-family: "SST-ARABIC-BOLD";
+}
+.submit-btn:hover {
+    color: #fff;
+    background-color: var(--main-color);
+    border: 0;
+    text-decoration: none;
+}
+.submit-btn:focus{
+	color: #fff;
+    background-color: var(--main-color);
+    border: 0;
+    text-decoration: none;
+}
+.mt-30{
+	margin-top: 30px;
+}
 .login-text {
 	background-color: #fff;
 	display: flex;
@@ -1620,6 +1661,7 @@ select {
 	display: flex;
 	padding: 30px 0 77px;
 
+margin-bottom: 62px;
 }
 
 .my-account-list {
@@ -2888,10 +2930,11 @@ html[dir="ltr"] .wait-order {
 	margin-top: 0;
 }
 .date-input{
-	padding: 0 !important;
+	/* padding: 0 !important;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
+	/* display: block; */
 }
 
 /*                            contact us page                                           */
@@ -2907,7 +2950,7 @@ html[dir="ltr"] .wait-order {
 	}
 
 	.total-order-info-2 .total-record {
-		gap: 15px !important;
+		gap: 5px !important;
 	}
 
 	.w-292 {
