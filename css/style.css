@@ -873,6 +873,12 @@ header {
 	padding: 0 20px;
 	padding-inline-start: 27px;
 }
+html[dir="ltr"] .date-input{
+	justify-content: start;
+    flex-direction: row-reverse;
+    direction: ltr;
+	display: block;
+}
 
 .dashboard-form .input-block {
 	width: 207px;
@@ -1507,6 +1513,10 @@ select {
 	border-bottom: 1px solid #ECECEC;
 	display: flex;
 	padding: 20px 0;
+}
+.table-record .cart-block{
+	border-top: 0;
+	border-bottom: 0;
 }
 
 .cart-pro-img {
@@ -2568,15 +2578,13 @@ html[dir="ltr"] .my-modal .submit-btn {
 	align-items: center;
 	justify-content: center;
 	background-color: rgba(245, 166, 35, 0.2);
-	width: 82px;
+	padding: 0 20px;
 	height: 24px;
 	border-radius: 12px;
-
+width: max-content;
 }
 
-html[dir="ltr"] .wait-order {
-	width: 100px;
-}
+
 
 .download {
 	color: #E13612;
